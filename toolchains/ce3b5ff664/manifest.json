@@ -1,0 +1,18 @@
+{
+  "ncs_version": {
+    "type": "commit",
+    "sha": "ba28dceaa03d43ab4ca8c74f70fc62ebfc7cee2f"
+  },
+  "bundle_id": "ce3b5ff664",
+  "ncs_repo_url": "https://github.com/nrfconnect/sdk-nrf",
+  "toolchain_bundler": {
+    "name": "nrfutil-toolchain-bundler",
+    "version": "0.14.6",
+    "commit_hash": "de94b33ab184ae7af845d587343d156f4c3f44ce",
+    "commit_date": "2024-01-18",
+    "host": "x86_64-pc-windows-msvc",
+    "build_timestamp": "2024-01-18T13:40:50.2161795Z",
+    "classification": "nrf-internal",
+    "dependencies": null
+  }
+}

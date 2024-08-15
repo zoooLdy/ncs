@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: devicetree
+Version: 0.0.2
+Summary: Python libraries for devicetree
+Home-page: https://github.com/zephyrproject-rtos/python-devicetree
+Author: Zephyr Project
+Author-email: devel@lists.zephyrproject.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: PyYAML (>=5.1)
+
+
+Placeholder
+===========
+
+This is just a placeholder for moving Zephyr's devicetree libraries
+to PyPI.
+
+

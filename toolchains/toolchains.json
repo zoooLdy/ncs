@@ -1,0 +1,18 @@
+[
+  {
+    "default_toolchain": {
+      "ncs_version": "v2.7.0"
+    },
+    "schema": 1,
+    "toolchains": [
+      {
+        "identifier": {
+          "bundle_id": "ce3b5ff664"
+        },
+        "ncs_versions": [
+          "v2.7.0"
+        ]
+      }
+    ]
+  }
+]

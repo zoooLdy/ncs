@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File naming: <vendor>_<part/series name>_svd.xml -->
+<device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="CMSIS-SVD.xsd">
+  <vendor>Nordic Semiconductor</vendor>
+  <vendorID>Nordic</vendorID>
+  <name>UICREXTENDED_description</name>
+  <version>1</version>
+  <description>A resource file describing the UICREXTENDED structure</description>
+  <addressUnitBits>8</addressUnitBits>
+  <width>32</width>
+  <size>32</size>
+  <resetValue>0x00000000</resetValue>
+  <resetMask>0xFFFFFFFF</resetMask>
+  <headerDefinitionsPrefix>NRF_</headerDefinitionsPrefix>
+  <peripherals>
+    <peripheral>
+      <name>UICREXTENDED_NS</name>
+      <description>Extended UICR.</description>
+      <baseAddress>0x00000000</baseAddress>
+      <headerStructName>UICREXTENDED</headerStructName>
+      <!--Security dma=NA-->
+      <!--Security securemapping=NS-->
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x1000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <groupName>UICREXTENDED</groupName>
+      <size>0x20</size>
+      <resetValue>0xFFFFFFFF</resetValue>
+      <registers>
+        <cluster>
+          <dim>10</dim>
+          <dimIncrement>0x044</dimIncrement>
+          <name>GPIO[%s]</name>
+          <description>Unspecified</description>
+          <headerStructName>UICREXTENDED_GPIO</headerStructName>
+          <access>read-write</access>
+          <addressOffset>0x000</addressOffset>
+          <register>
+            <name>INSTANCE</name>
+            <description>Description cluster: Address of the GPIO instance associated with GPIO[n]</description>
+            <addressOffset>0x000</addressOffset>
+            <access>read-write</access>
+            <resetValue>0xFFFFFFFF</resetValue>
+            <fields>
+              <field>
+                <name>ADDRESS</name>
+                <description>Instance address</description>
+                <lsb>0</lsb>
+                <msb>31</msb>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>OWN</name>
+            <description>Description cluster: Request ownership of the pins at GPIO port P[n]</description>
+            <addressOffset>0x004</addressOffset>
+            <access>read-write</access>
+            <resetValue>0xFFFFFFFF</resetValue>
+            <fields>
+              <field>
+                <name>PIN_0</name>
+                <description>Pin number</description>
+                <lsb>0</lsb>
+                <msb>0</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 0</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 0</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_1</name>
+                <description>Pin number</description>
+                <lsb>1</lsb>
+                <msb>1</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 1</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 1</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_2</name>
+                <description>Pin number</description>
+                <lsb>2</lsb>
+                <msb>2</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 2</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 2</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_3</name>
+                <description>Pin number</description>
+                <lsb>3</lsb>
+                <msb>3</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 3</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 3</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_4</name>
+                <description>Pin number</description>
+                <lsb>4</lsb>
+                <msb>4</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 4</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 4</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_5</name>
+                <description>Pin number</description>
+                <lsb>5</lsb>
+                <msb>5</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 5</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 5</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_6</name>
+                <description>Pin number</description>
+                <lsb>6</lsb>
+                <msb>6</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 6</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 6</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_7</name>
+                <description>Pin number</description>
+                <lsb>7</lsb>
+                <msb>7</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 7</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 7</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_8</name>
+                <description>Pin number</description>
+                <lsb>8</lsb>
+                <msb>8</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 8</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 8</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_9</name>
+                <description>Pin number</description>
+                <lsb>9</lsb>
+                <msb>9</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 9</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 9</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_10</name>
+                <description>Pin number</description>
+                <lsb>10</lsb>
+                <msb>10</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 10</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 10</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_11</name>
+                <description>Pin number</description>
+                <lsb>11</lsb>
+                <msb>11</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 11</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 11</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_12</name>
+                <description>Pin number</description>
+                <lsb>12</lsb>
+                <msb>12</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 12</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 12</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_13</name>
+                <description>Pin number</description>
+                <lsb>13</lsb>
+                <msb>13</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>NotOwn</name>
+                    <description>Do not own the pin 13</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>Own</name>
+                    <description>Own the pin 13</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+            </fields>
+          </register>
+          <register>
+            <name>SECURE</name>
+            <description>Description cluster: Request permission for the pins at GPIO port P[n]</description>
+            <addressOffset>0x008</addressOffset>
+            <access>read-write</access>
+            <resetValue>0xFFFFFFFF</resetValue>
+            <fields>
+              <field>
+                <name>PIN_0</name>
+                <description>Pin number</description>
+                <lsb>0</lsb>
+                <msb>0</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 0 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 0 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_1</name>
+                <description>Pin number</description>
+                <lsb>1</lsb>
+                <msb>1</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 1 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 1 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_2</name>
+                <description>Pin number</description>
+                <lsb>2</lsb>
+                <msb>2</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 2 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 2 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_3</name>
+                <description>Pin number</description>
+                <lsb>3</lsb>
+                <msb>3</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 3 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 3 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_4</name>
+                <description>Pin number</description>
+                <lsb>4</lsb>
+                <msb>4</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 4 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 4 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_5</name>
+                <description>Pin number</description>
+                <lsb>5</lsb>
+                <msb>5</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 5 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 5 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_6</name>
+                <description>Pin number</description>
+                <lsb>6</lsb>
+                <msb>6</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 6 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 6 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_7</name>
+                <description>Pin number</description>
+                <lsb>7</lsb>
+                <msb>7</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 7 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 7 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_8</name>
+                <description>Pin number</description>
+                <lsb>8</lsb>
+                <msb>8</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 8 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 8 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_9</name>
+                <description>Pin number</description>
+                <lsb>9</lsb>
+                <msb>9</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 9 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 9 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_10</name>
+                <description>Pin number</description>
+                <lsb>10</lsb>
+                <msb>10</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 10 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 10 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_11</name>
+                <description>Pin number</description>
+                <lsb>11</lsb>
+                <msb>11</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 11 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 11 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_12</name>
+                <description>Pin number</description>
+                <lsb>12</lsb>
+                <msb>12</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 12 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 12 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+              <field>
+                <name>PIN_13</name>
+                <description>Pin number</description>
+                <lsb>13</lsb>
+                <msb>13</msb>
+                <enumeratedValues>
+                  <enumeratedValue>
+                    <name>Secure</name>
+                    <description>The pin 13 is secure</description>
+                    <value>0x1</value>
+                  </enumeratedValue>
+                  <enumeratedValue>
+                    <name>NonSecure</name>
+                    <description>The pin 13 is non-secure</description>
+                    <value>0x0</value>
+                  </enumeratedValue>
+                </enumeratedValues>
+              </field>
+            </fields>
+          </register>
+          <cluster>
+            <dim>14</dim>
+            <dimIncrement>0x004</dimIncrement>
+            <name>PIN[%s]</name>
+            <description>Unspecified</description>
+            <headerStructName>UICREXTENDED_GPIO_PIN</headerStructName>
+            <access>read-write</access>
+            <addressOffset>0x00C</addressOffset>
+            <resetValue>0xFFFFFFFF</resetValue>
+            <register>
+              <name>CTRLSEL</name>
+              <description>Description cluster: CTRLSEL values for PIN[o] of GPIO port P[n]</description>
+              <addressOffset>0x000</addressOffset>
+              <access>read-write</access>
+              <fields>
+                <field>
+                  <name>CTRLSEL</name>
+                  <description>CTRLSEL value</description>
+                  <lsb>0</lsb>
+                  <msb>2</msb>
+                </field>
+              </fields>
+            </register>
+          </cluster>
+        </cluster>
+      </registers>
+    </peripheral>
+  </peripherals>
+</device>

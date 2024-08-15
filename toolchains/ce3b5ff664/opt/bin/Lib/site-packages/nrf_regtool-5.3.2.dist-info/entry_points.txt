@@ -1,0 +1,2 @@
+[console_scripts]
+nrf-regtool = nrfregtool.__main__:package_main
